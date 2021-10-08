@@ -102,11 +102,11 @@ function checkSignUpAge() {
 // signup phone
 signupFormItems.phone.addEventListener("focus", () => {
     if (signupFormItems.phone.value == "") {
-        signupFormItems.phone.value = 98
+        signupFormItems.phone.value = "98"
     }
 })
 signupFormItems.phone.addEventListener("blur", () => {
-    if (signupFormItems.phone.value == 98) {
+    if (signupFormItems.phone.value == "98") {
         signupFormItems.phone.value = "";
     }
 })

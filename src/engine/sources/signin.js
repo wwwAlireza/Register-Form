@@ -191,6 +191,7 @@ function startSignin() {
 
     const signinLoading = {
         on: () => {
+            signinItems.signinBtn.blur();
             signinItems.username.setAttribute("disabled", "disabled");
             signinItems.password.setAttribute("disabled", "disabled");
             signinItems.signinBtn.setAttribute("disabled", "disabled");

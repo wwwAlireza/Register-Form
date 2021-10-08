@@ -270,7 +270,7 @@ function startSendConfirmCode() {
     confirmItems.edit.editBtn.addEventListener("click", () => {
         confirmTabs.edit.open();
         confirmTabs.confirm.close();
-        confirmItems.edit.input.value = userPhone;
+        confirmItems.edit.input.value = String(userPhone);
     })
     confirmItems.edit.cancelBtn.addEventListener("click", () => {
         confirmTabs.edit.close();

@@ -22,6 +22,7 @@ let tabsAnimationType = "bounce";
 const tabs = {
     signup: {
         open: () => {
+            body.removeAttribute("style");
             body.classList.remove("signin-background");
             body.classList.add("signup-background");
             localStorage.setItem("lastTab", "signup");
@@ -55,6 +56,7 @@ const tabs = {
     },
     signin: {
         open: () => {
+            body.style.height = "100vh";
             body.classList.remove("signup-background");
             body.classList.add("signin-background");
             localStorage.setItem("lastTab", "signin");
@@ -136,6 +138,7 @@ if (lastTab) {
     switch (lastTab) {
         case "sginup":
             {
+                body.removeAttribute("style");
                 pageTitle.innerHTML = "Sign Up";
                 body.classList.remove("signin-background");
                 body.classList.add("signup-background");
@@ -145,6 +148,7 @@ if (lastTab) {
             break;
         case "signin":
             {
+                body.style.height = "100vh";
                 pageTitle.innerHTML = "Sign In";
                 body.classList.add("signin-background");
                 body.classList.remove("signup-background");
@@ -154,6 +158,7 @@ if (lastTab) {
             break;
         default:
             {
+                body.removeAttribute("style");
                 pageTitle.innerHTML = "Sign Up";
                 body.classList.remove("signin-background");
                 body.classList.add("signup-background");
@@ -163,6 +168,7 @@ if (lastTab) {
             break;
     }
 } else {
+    body.removeAttribute("style");
     pageTitle.innerHTML = "Sign Up";
     body.classList.remove("signin-background");
     body.classList.add("signup-background");

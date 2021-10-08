@@ -1,7 +1,6 @@
 .signup-container {
   background-color: #fff;
   margin: auto;
-  margin-top: 50px;
   padding: 30px;
   padding-bottom: 5px;
   border-radius: 1%;
@@ -15,9 +14,9 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 400px) {
   .signup-container {
-    margin-bottom: 80px;
+    margin-bottom: 130px;
   }
 }
 

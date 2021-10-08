@@ -1,7 +1,6 @@
 .signup-container {
     background-color: #fff;
     margin: auto;
-    margin-top: 50px;
     @media screen and (max-width: 450px) {
         margin-top: -10px;
     }
@@ -10,8 +9,8 @@
     border-radius: 1%;
     box-shadow: 1px 1px 3px .5px rgba($color: #000000, $alpha: .3),
     -1px -1px 3px .5px rgba($color: #000000, $alpha: .2);
-    @media screen and (min-width: 1000px) {
-        margin-bottom: 80px;
+    @media screen and (max-width: 400px) {
+        margin-bottom: 130px;
     }
 }
 
