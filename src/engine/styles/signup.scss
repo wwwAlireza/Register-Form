@@ -1,8 +1,9 @@
 .signup-container {
     background-color: #fff;
     margin: auto;
-    @media screen and (max-width: 450px) {
-        margin-top: -10px;
+    position: relative;
+    @media screen and (max-width: 600px) {
+        top: 30px;
     }
     padding: 30px;
     padding-bottom: 5px;

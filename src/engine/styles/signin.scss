@@ -2,9 +2,9 @@ $font-poppins: 'Poppins',
 sans-serif;
 .signin-container {
     position: relative;
-    @media screen and (max-width: 450px) {
-        margin-top: 15vh;
-        display: none;
+    @media screen and (max-width: 500px) {
+        position: absolute;
+        top: 20%;
     }
     .signin-disabled-layer {
         width: 100%;

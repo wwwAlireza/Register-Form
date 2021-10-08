@@ -1,6 +1,7 @@
 .signup-container {
   background-color: #fff;
   margin: auto;
+  position: relative;
   padding: 30px;
   padding-bottom: 5px;
   border-radius: 1%;
@@ -8,9 +9,9 @@
           box-shadow: 1px 1px 3px 0.5px rgba(0, 0, 0, 0.3), -1px -1px 3px 0.5px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .signup-container {
-    margin-top: -10px;
+    top: 30px;
   }
 }
 

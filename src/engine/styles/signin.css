@@ -2,9 +2,10 @@
   position: relative;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .signin-container {
-    margin-top: 15vh;
+    position: absolute;
+    top: 20%;
   }
 }
 
