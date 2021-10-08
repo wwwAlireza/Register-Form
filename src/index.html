@@ -1,0 +1,353 @@
+<!-- 
+    coded by alireza mhm ;
+    github : github.com/wwwAlireza ;
+    codepen: codepen.io/alireza82 ;
+    barnamenevisan: barnamenevisan.org/Profile/68586 ;
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="page-title">Sign Up</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="engine/styles/main.css">
+    <link rel="stylesheet" href="engine/styles/signin.css">
+    <link rel="stylesheet" href="engine/styles/signup.css">
+    <link rel="stylesheet" href="engine/styles/confirmNumber.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="content/file.svg">
+</head>
+
+<body>
+    <div class="body signup-background">
+        <!-- alert -->
+        <div id="alert-container" class="d-none col-12 animate__animated">
+            <div id="alert" class="alert alert-danger alert-dismissible col-11 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+                <button type="button" class="btn btn-close" id="alert-close"></button>
+                <span id="alert-text">
+                    Blank
+                </span>
+            </div>
+        </div>
+        <!-- /alert -->
+        <!-- terms and rules -->
+        <div class="terms-container d-none animate__animated">
+            <div class="terms-header d-flex justify-content-start">
+                <div class="terms-title d-flex">
+                    <img src="content/book.svg" alt="book" class="icon" draggable="false">
+                    <div class="p-1"></div>
+                    <span class="title d-flex flex-column">
+                        Terms & Rules
+                        <span class="update">last update: 2021/9/25</span>
+                    </span>
+                </div>
+            </div>
+            <div class="hr-line">
+                <div></div>
+            </div>
+            <div class="terms-body">
+                <div class="content">
+                    <p class="h6 mb-1">Terms Of Use</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam?
+                    <ul>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                    <p class="h6 mb-1">Terms Of Lorem</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                    illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam?
+                    <ul>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Odit, illum nemo dolore ducimus hic necessitatibus laborum vero, eius quaerat reprehenderit, omnis id esse. Doloribus praesentium odio exercitationem ipsa! Modi, aliquam?
+                </div>
+            </div>
+            <div class="hr-line">
+                <div></div>
+            </div>
+            <div class="terms-footer">
+                <button class="btn btn-outline-secondary" id="terms-close-btn">Close</button>
+                <div class="p-1"></div>
+                <button class="btn btn-primary animate__animated" id="terms-accept-btn">Accept</button>
+            </div>
+        </div>
+        <!-- /terms and rules -->
+
+        <!-- signup -->
+        <div class="signup-container col-11 col-lg-5 animate__animated position-absolute d-none" id="signup-tab">
+            <div class="signup-header mb-3">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                <span class="title">SignUp</span>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="name" class="form-control form-input" autocomplete="off" spellcheck="false" maxlength="20" id="signup-name">
+                <div class="invalid-feedback">
+                    invalid name
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="last name" class="form-control form-input" autocomplete="off" spellcheck="false" maxlength="20" id="signup-lastname">
+                <div class="invalid-feedback">
+                    invalid last name
+                </div>
+            </div>
+            <div class="mb-3 row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <input type="number" placeholder="age" class="form-control form-input mb-3 mb-md-0" autocomplete="off" spellcheck="false" id="signup-age">
+                    <div class="invalid-feedback">
+                        invalid age
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="number" placeholder="phone" class="form-control form-input" autocomplete="off" spellcheck="false" id="signup-phone">
+                    <div class="invalid-feedback">
+                        invalid number format, please enter without 0
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="email" class="form-control form-input" autocomplete="off" spellcheck="false" maxlength="40" id="signup-email">
+                <div class="invalid-feedback">
+                    invalid email
+                </div>
+            </div>
+            <div class="mb-3 row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <label for="signup-country" class="mb-1 text-muted"> Country</label>
+                    <select class="form-select" id="signup-country" disabled>
+                        <option value="iran">iran</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        invalid country
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="signup-city" class="mb-1 text-muted"> City</label>
+                    <select id="signup-city" class="form-select form-input">
+                        <option value="tehran">Tehran</option>
+                        <option value="zanjan">zanjan</option>
+                        <option value="isfahan">isfahan</option>
+                        <option value="kerman">kerman</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        invalid city
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control form-input" placeholder="Username" autocomplete="off" spellcheck="false" maxlength="16" id="signup-username">
+                <div class="invalid-feedback">
+                    <span>invalid username</span>
+                    <span class="d-none">This username has already been taken</span>
+                </div>
+            </div>
+            <div class="mb-3 row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <input type="password" class="form-control form-input mb-3 mb-md-0" placeholder="Password" autocomplete="off" spellcheck="false" maxlength="16" id="signup-password">
+                    <div class="invalid-feedback">
+                        Password is too weak, Must be between 8 and 16
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control form-input" placeholder="Repeat Password" autocomplete="off" spellcheck="false" maxlength="16" id="signup-repeatPassword">
+                    <div class="invalid-feedback">
+                        password doesn't match !
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="signup-acceptTerms">
+                <label for="acceptTerms">I read and approve all</label> <span class="link" id="terms-and-rules-text">Terms and Rules</span>
+                <div class="invalid-feedback">
+                    Please read and accept the terms and rules
+                </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger d-none d-sm-block" id="signup-cancel">Cancel</button>
+                    <div class="p-1"></div>
+                    <button type="button" class="btn btn-outline-primary" id="signup-signin">
+                        I Have Account
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                    </button>
+                </div>
+                <div class="signup-signup-container d-flex">
+                    <div class="p-1"></div>
+                    <button type="button" class="btn btn-primary" id="signup-signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <!-- /signup -->
+
+        <!-- confirm -->
+        <div class="confirm col-11 col-sm-7 col-md-5 col-lg-4 col-xl-3 animate__animated d-none position-absolute" id="confirm-tab">
+            <div id="confirm-disabled-layer" class="d-none"></div>
+            <div class="col-12 h-100 confirm-main d-flex flex-column justify-content-center animate__animated position-absolute">
+                <div class="confirm-header">
+                    <span class="title">
+                        Mobile number verification
+                    </span>
+                    <span class="description">
+                        We have sent you a text message with a 4 digit code. Enter the code to create your account !
+                    </span>
+                    <div id="confirm-edit-button" class="number-container" data-bs-toggle="tooltip" data-bs-placement="right" title="Click To Edit" data-bs-offset="0,7px">
+                        +<span id="confirm-number">--</span>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                    </div>
+                </div>
+
+                <div class="confirm-body">
+                    <input type="text" autocomplete="off" spellcheck="false" maxlength="1" class="confirm-input">
+                    <input type="text" autocomplete="off" spellcheck="false" maxlength="1" class="confirm-input">
+                    <input type="text" autocomplete="off" spellcheck="false" maxlength="1" class="confirm-input">
+                    <input type="text" autocomplete="off" spellcheck="false" maxlength="1" class="confirm-input">
+                </div>
+
+                <div class="confirm-footer">
+                    <div class="confirm-time">
+                        <div class="time">
+                            <span id="confirm-minute">2</span>:<span id="confirm-second">00</span>
+                        </div>
+                        <div class="p-1"></div>
+                        <div class="resend d-none animate__animated" id="confirm-resend">
+                            <span>Resend Code</span>
+                        </div>
+                    </div>
+                    <div class="confirm-footer-buttons">
+                        <div class="confirm-back" id="confirm-back-btn">
+                            <button class="btn btn-outline-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                Go back
+                            <div class="p-1"></div>
+                        </button>
+                        </div>
+                        <div class="p-1"></div>
+                        <div class="confirm-confirm" id="confirm-confirm-btn">
+                            <button class="btn btn-primary">Confirm
+                                <div id="confirm-btn-loading" class="d-none animate__animated">
+                                    <div class="circle rotateAnim"></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- edit number -->
+            <div class="position-absolute confirm-edit-number p-1 d-flex justify-content-center align-items-center flex-column animate__animated d-none">
+                <p class="h5 text-center">Edit Number</p>
+                <div class="w-100 d-flex align-items-center flex-column px-2 px-md-4 px-xl-5">
+                    <input id="confirm-edit-input" type="number" class="form-control w-100 text-center border-0 border-bottom" placeholder="phone" autocomplete="off" spellcheck="false">
+                    <div class="invalid-feedback">
+                        invalid number
+                    </div>
+                </div>
+                <div class="mt-4 confirm-edit-buttons">
+                    <button type="button" class="btn btn-danger d-inline-flex align-items-center ps-1" id="confirm-edit-cancel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <span>Cancel</span></button>
+                    <button type="button" class="btn btn-primary d-inline-flex align-items-center" id="confirm-edit-save">Save
+                        <svg class="ms-1" style="margin-top: 1px;" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+            <!-- /edit number -->
+        </div>
+        <!-- /confirm -->
+
+        <!-- sign in -->
+        <div class="signin-container animate__animated position-absolute d-none" id="signin-tab">
+            <div class="signin-disabled-layer d-none"></div>
+            <div class="signin">
+                <div class="signin-logo animate__animated">
+                    <svg id="signin-signin-logo" xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <svg id="signin-reset-logo" class="d-none" style="transform: rotate(80deg);" xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
+                </div>
+                <div class="signin-reset-title bg-primary text-white ps-3 px-2 rounded d-none animate__animated">
+                    Reset Password
+                </div>
+                <div class="signin-inputs">
+                    <div class="input-group rounded  animate__animated" id="signin-username-container">
+                        <span class="input-group-text bg-white border-end-0">
+                            <svg id="signin-username-icon" xmlns="http://www.w3.org/2000/svg" width="20" stroke="#000" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </span>
+                        <input id="signin-username" type="text" class="form-control" autocomplete="off" spellcheck="false" placeholder="username or email" maxlength="40">
+                    </div>
+
+                    <p class="signin-reset-description-before animate__animated mb-0 d-none">
+                        Enter a valid email or username then click "Send Link" to get the password recovery link
+                    </p>
+
+                    <div class="input-group mt-3 rounded animate__animated" id="signin-password-container">
+                        <span class="input-group-text bg-white border-end-0">
+                            <svg id="signin-password-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </span>
+                        <input id="signin-password" type="password" class="form-control border-end-0" autocomplete="off" spellcheck="false" placeholder="password" maxlength="16">
+                        <span class="input-group-text bg-white p-0 pe-2 border-start-0" id="signin-password-visibility">
+                            <svg id="signin-password-visible" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            <svg id="signin-password-hidden" class="d-none" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+                        </span>
+                    </div>
+                    <div class="signin-forget-password d-flex justify-content-start w-100 animate__animated">
+                        <span class="text-primary">Forget Password</span>
+                    </div>
+
+                    <div class="d-flex justify-content-center signin-button-container">
+                        <button disabled type="button" class="btn btn-primary animate__animated" id="signin-button">
+                            <span class="title">
+                                Log in
+                            </span>
+                            <svg class="icon animate__animated" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                            <div class="signin-button-loading d-none">
+                                <div class="circle"></div>
+                                <div class="circle ms-1"></div>
+                                <div class="circle ms-1"></div>
+                            </div>
+                        </button>
+                        <div class="signin-resettab-buttons animate__animated d-none">
+                            <button type="button" class="btn btn-secondary" id="signin-reset-back">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                <span>Go Back</span>
+                            </button>
+                            <div class="p-1"></div>
+                            <button type="button" class="btn btn-primary" id="signin-reset-send">
+                                <span>Send Link</span>
+                                <div style="padding: 1px;"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="signin-signup d-flex justify-content-center rounded animate__animated">
+                Don't have an account?<span class="text-primary"> sign up</span>
+            </div>
+        </div>
+        <!-- /sign in -->
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="engine/sources/main.js"></script>
+<script src="engine/sources/signin.js"></script>
+<script src="engine/sources/signup.js"></script>
+<script src="engine/sources/confirmNumber.js"></script>
+
+</html>

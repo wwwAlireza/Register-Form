@@ -1,0 +1,163 @@
+$font-poppins: 'Poppins',
+sans-serif;
+.confirm-height-2 {
+    height: 180px !important;
+}
+
+.confirm {
+    transition: width .2s, height .8s;
+    height: 320px;
+    box-shadow: 1px 1px 3px .5px rgba($color: #000000, $alpha: .3), -1px -1px 3px .5px rgba($color: #000000, $alpha: .2);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    padding-bottom: 20px;
+    // header
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 330px) {
+        height: 350px;
+    }
+    #confirm-disabled-layer {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .02);
+        inset: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    .confirm-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .title {
+            font-size: 1.3em;
+            font-family: $font-poppins;
+            white-space: nowrap;
+            @media screen and (max-width: 450px) {
+                font-size: 1.2rem;
+            }
+        }
+        .description {
+            text-align: center;
+            font-size: .9rem;
+            opacity: .8;
+            width: 90%;
+            margin-top: 5px;
+        }
+        .number-container {
+            color: var(--bs-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            margin-top: 7px;
+            #number {
+                font-size: 1.2rem;
+            }
+            .icon {
+                margin-left: 4px;
+                margin-top: 2px;
+            }
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+    // body
+    .confirm-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .confirm-input {
+            border: 0;
+            outline: none;
+            border-bottom: 2px solid;
+            width: 40px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: $font-poppins;
+            caret-color: transparent;
+            cursor: pointer;
+            margin: 9px;
+            margin-top: 20px;
+            position: relative;
+            bottom: 0;
+            transition: transform .1s, bottom .1s;
+            &:focus {
+                border-color: var(--bs-primary);
+                transform: scale(1.1);
+                bottom: 5px;
+            }
+        }
+    }
+    // header
+    .confirm-footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: $font-poppins;
+        margin-top: 7px;
+        .confirm-time {
+            display: flex;
+            justify-content: center;
+            #confirm-resend {
+                color: var(--bs-primary);
+                cursor: pointer;
+            }
+        }
+        .confirm-footer-buttons {
+            display: flex;
+            margin-top: 7px;
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 125px !important;
+                height: 40px !important;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.active-input {
+    border-color: var(--bs-primary) !important;
+}
+
+#confirm-btn-loading {
+    position: relative;
+    left: 7px;
+    .circle {
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        border-left-color: transparent;
+    }
+}
+
+.confirm-wrong-code {
+    border-bottom-color: var(--bs-danger) !important;
+}
+
+// edit number
+.confirm-edit-number {
+    p {
+        font-family: $font-poppins;
+    }
+    .confirm-edit-buttons {
+        .btn {
+            width: 100px !important;
+            justify-content: center;
+        }
+    }
+}

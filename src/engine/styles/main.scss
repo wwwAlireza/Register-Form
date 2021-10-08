@@ -1,0 +1,123 @@
+/**********
+    coded by alireza mhm ;
+    github : github.com/wwwAlireza ;
+    codepen: codepen.io/alireza82 ;
+    barnamenevisan: barnamenevisan.org/Profile/68586 ;
+ **********/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// general
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(221deg, rgb(34, 222, 237), rgb(135, 89, 215));
+    @media screen and (max-width: 450px) {
+        min-height: 105vh;
+    }
+    @media screen and (max-width: 370px) {
+        min-height: 130vh;
+    }
+    transition: background-size .9s;
+}
+
+.signup-background {
+    background-size: 100% 100%;
+}
+
+.signin-background {
+    background-size: 150% 100%;
+}
+
+.overflowY-hidden {
+    overflow-y: hidden !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+// inputs
+input[type=number]::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: none;
+}
+
+label {
+    font-size: 1rem;
+    user-select: none;
+}
+
+input::placeholder {
+    font-size: .95rem;
+}
+
+.hr-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    div {
+        width: 90%;
+        height: 0.1px;
+        background-color: rgba($color: #000000, $alpha: .3);
+    }
+}
+
+// mouse
+.not-allowed-mouse {
+    cursor: not-allowed !important;
+}
+
+.loading-mouse {
+    cursor: wait !important;
+}
+
+// animations
+@keyframes rotateAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateAnim {
+    animation-name: rotateAnim;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: .7s;
+}
+
+// alert
+#alert-container {
+    position: fixed;
+    top: 7px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    .btn {
+        outline: none;
+        box-shadow: none;
+        transform: scale(.9);
+    }
+}
+
+.danger-stroke {
+    stroke: var(--bs-danger);
+}

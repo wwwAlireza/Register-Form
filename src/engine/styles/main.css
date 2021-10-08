@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(221deg, #22deed, #8759d7);
+  -webkit-transition: background-size .9s;
+  transition: background-size .9s;
+}
+
+@media screen and (max-width: 450px) {
+  .body {
+    min-height: 105vh;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .body {
+    min-height: 130vh;
+  }
+}
+
+.signup-background {
+  background-size: 100% 100%;
+}
+
+.signin-background {
+  background-size: 150% 100%;
+}
+
+.overflowY-hidden {
+  overflow-y: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: none;
+}
+
+label {
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: .95rem;
+}
+
+input:-ms-input-placeholder {
+  font-size: .95rem;
+}
+
+input::-ms-input-placeholder {
+  font-size: .95rem;
+}
+
+input::placeholder {
+  font-size: .95rem;
+}
+
+.hr-line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hr-line div {
+  width: 90%;
+  height: 0.1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.not-allowed-mouse {
+  cursor: not-allowed !important;
+}
+
+.loading-mouse {
+  cursor: wait !important;
+}
+
+@-webkit-keyframes rotateAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.rotateAnim {
+  -webkit-animation-name: rotateAnim;
+          animation-name: rotateAnim;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+}
+
+#alert-container {
+  position: fixed;
+  top: 7px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#alert-container .btn {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.danger-stroke {
+  stroke: var(--bs-danger);
+}
+/*# sourceMappingURL=main.css.map */

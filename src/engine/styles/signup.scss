@@ -1,0 +1,111 @@
+.signup-container {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    @media screen and (max-width: 450px) {
+        margin-top: -10px;
+    }
+    padding: 30px;
+    padding-bottom: 5px;
+    border-radius: 1%;
+    box-shadow: 1px 1px 3px .5px rgba($color: #000000, $alpha: .3),
+    -1px -1px 3px .5px rgba($color: #000000, $alpha: .2);
+    @media screen and (min-width: 1000px) {
+        margin-bottom: 80px;
+    }
+}
+
+.signup-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: .8;
+    padding-left: 5px;
+    .icon {
+        stroke: #000;
+        width: 34px;
+    }
+    .title {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+}
+
+// terms and rules
+.terms-container {
+    width: 400px;
+    @media screen and (max-width: 400px) {
+        width: 300px;
+    }
+    @media screen and (max-width:300px) {
+        width: 270px;
+    }
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    animation-duration: .5s !important;
+    border: 1px solid rgba($color: #000000, $alpha: .7);
+    border-radius: 1%;
+    // header
+    .terms-header {
+        padding: 20px 15px;
+        .terms-title {
+            .icon {
+                width: 40px;
+            }
+            .title {
+                font-size: 1.3rem;
+                .update {
+                    font-size: .8rem;
+                    margin-left: 3px;
+                }
+            }
+        }
+        #terms-close {
+            margin-top: 1.5px;
+        }
+    }
+    // body
+    .terms-body {
+        width: 100%;
+        padding: 20px;
+        padding-top: 15px;
+        height: 350px;
+        overflow-y: auto;
+        @media screen and (min-width: 1100px) {
+            &::-webkit-scrollbar {
+                width: .5em;
+            }
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+                border-radius: 15px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba($color: #000000, $alpha: .4);
+                border-radius: 15px;
+                width: 150%;
+            }
+        }
+        .content {
+            opacity: .8;
+        }
+    }
+    // footer
+    .terms-footer {
+        display: flex;
+        justify-content: center;
+        padding: 13px;
+        .btn {
+            width: 100px !important;
+        }
+    }
+}
+
+.link {
+    cursor: pointer;
+    transition: opacity .2s;
+    color: var(--bs-primary);
+    &:hover {
+        opacity: .8;
+    }
+}
