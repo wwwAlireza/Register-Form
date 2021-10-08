@@ -4,6 +4,7 @@ sans-serif;
     position: relative;
     @media screen and (max-width: 450px) {
         margin-top: 15vh;
+        display: none;
     }
     .signin-disabled-layer {
         width: 100%;
