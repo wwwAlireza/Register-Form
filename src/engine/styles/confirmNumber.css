@@ -25,6 +25,12 @@
           align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .confirm {
+    top: 20%;
+  }
+}
+
 @media screen and (max-width: 330px) {
   .confirm {
     height: 350px;

@@ -191,7 +191,7 @@ function startSignin() {
 
     const signinLoading = {
         on: () => {
-            signinItems.signinBtn.blur();
+            signinItems.signinBtn.querySelector(".icon").classList.add("d-none");
             signinItems.username.setAttribute("disabled", "disabled");
             signinItems.password.setAttribute("disabled", "disabled");
             signinItems.signinBtn.setAttribute("disabled", "disabled");
@@ -203,6 +203,8 @@ function startSignin() {
             signinItems.signinBtn.style.width = "145px";
         },
         off: () => {
+            signinItems.signinBtn.querySelector(".icon").classList.remove("d-none");
+            signinItems.signinBtn.blur();
             signinItems.username.removeAttribute("disabled");
             signinItems.password.removeAttribute("disabled");
             signinItems.signinBtn.removeAttribute("disabled");

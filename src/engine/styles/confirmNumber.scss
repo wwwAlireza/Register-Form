@@ -12,12 +12,14 @@ sans-serif;
     background-color: #fff;
     padding: 10px;
     padding-bottom: 20px;
-    // header
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 500px) {
+        top: 20%;
+    }
     @media screen and (max-width: 330px) {
         height: 350px;
     }
@@ -29,6 +31,7 @@ sans-serif;
         position: absolute;
         z-index: 2;
     }
+    // header
     .confirm-header {
         display: flex;
         align-items: center;

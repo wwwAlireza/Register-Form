@@ -321,7 +321,7 @@ function startSendConfirmCode() {
     function confrimEditCheckPhone() {
         let phone = confirmItems.edit.input.value;
         if (phone.length == 12) {
-            if (phone.slice(0, 2) == "98") {
+            if (phone.slice(0, 2) == "98" || phone.slice(0, 2) == "۹۸") {
                 confirmEditNumber(phone);
             } else {
                 systemAlert.new({

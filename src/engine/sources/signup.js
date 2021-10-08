@@ -114,7 +114,7 @@ signupFormItems.phone.addEventListener("blur", () => {
 function checkSignUpPhone() {
     let phone = signupFormItems.phone.value;
     if (phone && phone.length == 12) {
-        if (phone.slice(0, 2) == "98") {
+        if (phone.slice(0, 2) == "98" || phone.slice(0, 2) == "۹۸") {
             signupValue.phone = true;
         } else {
             systemAlert.new({
