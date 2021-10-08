@@ -110,13 +110,13 @@
             </div>
             <div class="mb-3 row row-cols-1 row-cols-md-2">
                 <div class="col">
-                    <input type="number" placeholder="age" class="form-control form-input mb-3 mb-md-0" autocomplete="off" spellcheck="false" id="signup-age">
+                    <input type="number" placeholder="age" class="form-control form-input mb-3 mb-md-0" autocomplete="off" spellcheck="false" id="signup-age" maxlength="2">
                     <div class="invalid-feedback">
                         invalid age
                     </div>
                 </div>
                 <div class="col">
-                    <input type="number" placeholder="phone" class="form-control form-input" autocomplete="off" spellcheck="false" id="signup-phone">
+                    <input type="number" placeholder="phone" class="form-control form-input" autocomplete="off" spellcheck="false" id="signup-phone" maxlength="12">
                     <div class="invalid-feedback">
                         invalid number format, please enter without 0
                     </div>
@@ -253,7 +253,7 @@
             <div class="position-absolute confirm-edit-number p-1 d-flex justify-content-center align-items-center flex-column animate__animated d-none">
                 <p class="h5 text-center">Edit Number</p>
                 <div class="w-100 d-flex align-items-center flex-column px-2 px-md-4 px-xl-5">
-                    <input id="confirm-edit-input" type="number" class="form-control w-100 text-center border-0 border-bottom" placeholder="phone" autocomplete="off" spellcheck="false">
+                    <input id="confirm-edit-input" type="number" class="form-control w-100 text-center border-0 border-bottom" placeholder="phone" autocomplete="off" spellcheck="false" maxlength="12">
                     <div class="invalid-feedback">
                         invalid number
                     </div>
