@@ -1,5 +1,5 @@
 # Register-Form
-Registration form with sign in form as well as confirmation of mobile number.
+Registration form with sign in form as well as confirmation of mobile number <br>
 (**Fully responsive**)
 It generally has three parts :
  - Sign Up
