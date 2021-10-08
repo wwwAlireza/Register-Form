@@ -91,7 +91,18 @@ function checkSignUplastName() {
 function checkSignUpAge() {
     let age = signupFormItems.age.value;
     if (age && age.length == 2) {
-        signupValue.age = true;
+        if (wordFormat.exec(age) == null) {
+            signupValue.age = true;
+        } else {
+            systemAlert.new({
+                type: "danger",
+                text: "It is forbidden to enter words into inputs that only numeric inputs should be entered",
+                duration: 3000
+            })
+            signupFormItems.age.classList.add("is-invalid");
+            signupFormItems.age.focus();
+            signupValue.age = false;
+        }
     } else {
         signupFormItems.age.classList.add("is-invalid");
         signupFormItems.age.focus();
@@ -114,12 +125,23 @@ signupFormItems.phone.addEventListener("blur", () => {
 function checkSignUpPhone() {
     let phone = signupFormItems.phone.value;
     if (phone && phone.length == 12) {
-        if (phone.slice(0, 2) == "98" || phone.slice(0, 2) == "۹۸") {
-            signupValue.phone = true;
+        if (wordFormat.exec(phone) == null) {
+            if (phone.slice(0, 2) == "98" || phone.slice(0, 2) == "۹۸") {
+                signupValue.phone = true;
+            } else {
+                systemAlert.new({
+                    type: "danger",
+                    text: "The beginning of the phone number must be 98 And do not start with 0",
+                    duration: 3000
+                })
+                signupFormItems.phone.classList.add("is-invalid");
+                signupFormItems.phone.focus();
+                signupValue.phone = false;
+            }
         } else {
             systemAlert.new({
                 type: "danger",
-                text: "The beginning of the phone number must be 98 And do not start with 0",
+                text: "It is forbidden to enter words into inputs that only numeric inputs should be entered",
                 duration: 3000
             })
             signupFormItems.phone.classList.add("is-invalid");

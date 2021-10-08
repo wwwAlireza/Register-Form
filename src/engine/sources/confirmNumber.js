@@ -321,15 +321,26 @@ function startSendConfirmCode() {
     function confrimEditCheckPhone() {
         let phone = confirmItems.edit.input.value;
         if (phone.length == 12) {
-            if (phone.slice(0, 2) == "98" || phone.slice(0, 2) == "۹۸") {
-                confirmEditNumber(phone);
+            if (wordFormat.exec(phone) == null) {
+                if (phone.slice(0, 2) == "98" || phone.slice(0, 2) == "۹۸") {
+                    confirmEditNumber(phone);
+                } else {
+                    systemAlert.new({
+                        type: "danger",
+                        text: "The format of the number is not correct, it must have 12 digits that are numbered without 0 and the beginning is 98",
+                        duration: 4000
+                    })
+                    confirmItems.edit.input.classList.add("is-invalid");
+                    confirmItems.edit.input.focus();
+                }
             } else {
                 systemAlert.new({
                     type: "danger",
-                    text: "The format of the number is not correct, it must have 12 digits that are numbered without 0 and the beginning is 98",
-                    duration: 4000
-                })
+                    text: "It is forbidden to enter words into inputs that only numeric inputs should be entered",
+                    duration: 3000
+                });
                 confirmItems.edit.input.classList.add("is-invalid");
+                confirmItems.edit.input.focus();
             }
         } else {
             systemAlert.new({

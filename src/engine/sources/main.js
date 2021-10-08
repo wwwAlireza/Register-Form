@@ -175,3 +175,26 @@ if (lastTab) {
     signupTab.classList.remove("d-none");
     localStorage.setItem("lastTab", "signup");
 }
+
+// responsive
+setInputsType(window.innerWidth)
+window.addEventListener("resize", () => {
+    setInputsType(window.innerWidth)
+})
+
+function setInputsType(width) {
+    var numberInputs = document.querySelectorAll("input[type=number]");
+    if (width <= 500) {
+        for (let i = 0; i < numberInputs.length; i++) {
+            numberInputs[i].setAttribute("type", "text");
+        }
+    } else {
+        for (let i = 0; i < numberInputs.length; i++) {
+            numberInputs[i].setAttribute("type", "number");
+        }
+    }
+
+}
+
+// RegExp
+var wordFormat = new RegExp(/[A-z]/g);
