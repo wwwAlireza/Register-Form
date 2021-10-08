@@ -22,6 +22,7 @@ let tabsAnimationType = "bounce";
 const tabs = {
     signup: {
         open: () => {
+            window.scrollTo(0, 0);
             body.removeAttribute("style");
             body.classList.remove("signin-background");
             body.classList.add("signup-background");
@@ -41,6 +42,7 @@ const tabs = {
     },
     confirm: {
         open: () => {
+            window.scrollTo(0, 0);
             pageTitle.innerText = "Confirm Number";
             systemAlert.close();
             clearTimeout(tabsTimer);
@@ -56,6 +58,7 @@ const tabs = {
     },
     signin: {
         open: () => {
+            window.scrollTo(0, 0);
             body.style.height = "100vh";
             body.classList.remove("signup-background");
             body.classList.add("signin-background");
