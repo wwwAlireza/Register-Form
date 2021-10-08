@@ -32,6 +32,10 @@ body {
 @media screen and (max-width: 450px) {
   .body {
     min-height: 105vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 30px;
   }
 }
 
